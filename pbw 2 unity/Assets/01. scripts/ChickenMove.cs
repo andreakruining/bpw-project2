@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChickenMove : MonoBehaviour
 {
  
-            public float Speed = 5f;
+        public float Speed = 5f;
 
     public void Update()
     {
