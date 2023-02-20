@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4330953670870838984, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+      propertyPath: m_Constraints
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 6288412449205794590, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_Name
       value: chicken
