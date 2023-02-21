@@ -5,6 +5,7 @@ using UnityEngine;
 public class JumpMove : MonoBehaviour
 {
     public float Speed = 5f;
+    public float JumpForce = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +32,9 @@ public class JumpMove : MonoBehaviour
 
         transform.position = position;
 
-        if(Input.GetKey("spacebar"))
+        if(Input.GetKey("space"))
         {
-            position.y += Speed * Time.deltaTime;
+            position.y += JumpForce * Time.deltaTime;
         }
 
         transform.position = position;
