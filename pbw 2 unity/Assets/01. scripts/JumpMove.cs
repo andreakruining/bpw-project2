@@ -6,6 +6,8 @@ public class JumpMove : MonoBehaviour
 {
     public float Speed = 5f;
     public float JumpForce = 10f;
+    public float TurnSpeed = 90f;
+
 
     // Start is called before the first frame update
     void Start()

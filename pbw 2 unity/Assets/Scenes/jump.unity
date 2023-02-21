@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80606608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.55, y: 0.82, z: 1.0616016}
+  m_LocalPosition: {x: 10.59, y: 0.82, z: 1.0616016}
   m_LocalScale: {x: 5.1877594, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -422,6 +422,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4330953670870838984, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330953670870838984, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_Constraints
       value: 120
       objectReference: {fileID: 0}
@@ -472,6 +476,14 @@ PrefabInstance:
     - target: {fileID: 7444481161540298304, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323770362838439861, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323770362838439861, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+      propertyPath: m_Size.z
+      value: 1.51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
@@ -589,8 +601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5b4c48b568624429e08219b090b69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  JumpForce: 5
+  Speed: 2
+  JumpForce: 4
+  TurnSpeed: 90
 --- !u!1 &1639214947
 GameObject:
   m_ObjectHideFlags: 0
