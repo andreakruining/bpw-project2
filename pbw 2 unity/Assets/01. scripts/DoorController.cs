@@ -11,8 +11,11 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Egg"))
+        if(other.CompareTag("Door"))
         {
+
+            Debug.Log("triggered");
+
             if(openTrigger)
             {
                 myDoor.Play("DoorOpening", 0, 0.0f);
