@@ -188,6 +188,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
+--- !u!1 &103037548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5109071951767396617, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
+  m_PrefabInstance: {fileID: 2109381011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &103037550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103037548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351bb8825c3c34144be5cbc854dcd34d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &323498010
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +535,7 @@ GameObject:
   - component: {fileID: 1558951364}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -694,7 +711,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4261703732310332110, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_Name
-      value: Ground (2)
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261703732310332110, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
+      propertyPath: m_TagString
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_RootOrder
