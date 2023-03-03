@@ -18,36 +18,36 @@ public class JumpMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetKeyDown(KeyCode.D))
-     {
-         transform.rotation = Quaternion.LookRotation(Camera.main.transform.right);
-     }
-        //Move();
+    //      if (Input.GetKeyDown(KeyCode.D))
+    //  {
+    //      transform.rotation = Quaternion.LookRotation(Camera.main.transform.right);
+    //  }
+        Move();
     }
 
-    // public void Move()
-    // {
-    //     Vector3 position = transform.position;
+    public void Move()
+    {
+        Vector3 position = transform.position;
 
-    //     if(Input.GetKey("a"))
-    //     {
-    //         position.x -= Speed * Time.deltaTime;
-    //     }
+        if(Input.GetKey("a"))
+        {
+            position.x -= Speed * Time.deltaTime;
+        }
 
-    //     transform.position = position;
+        transform.position = position;
         
-    //     if(Input.GetKey("d"))
-    //     {
-    //         position.x += Speed * Time.deltaTime;
-    //     }
+        if(Input.GetKey("d"))
+        {
+            position.x += Speed * Time.deltaTime;
+        }
 
-    //     transform.position = position;
+        transform.position = position;
 
-    //     if(Input.GetKey("space"))
-    //     {
-    //         position.y += JumpForce * Time.deltaTime;
-    //     }
+        if(Input.GetKey("space"))
+        {
+            position.y += JumpForce * Time.deltaTime;
+        }
 
-    //     transform.position = position;
-    // }
+        transform.position = position;
+    }
 }
