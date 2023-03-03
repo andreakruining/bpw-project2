@@ -6,7 +6,7 @@ public class CollisionDoor : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Door")
+        if(collision.GetComponent<Collider>().tag == "Door")
         {
             Debug.Log("Button");
         }
