@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,11 +140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.600739
+      value: 4.6019983
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.49
+      value: -4.43
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalPosition.y
@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalPosition.x
@@ -413,11 +413,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.600739
+      value: 3.2725453
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.47
+      value: -12.18
       objectReference: {fileID: 0}
     - target: {fileID: 4261703732310332146, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
       propertyPath: m_LocalPosition.y
@@ -464,6 +464,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4330953670870838984, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+      propertyPath: m_Constraints
+      value: 56
+      objectReference: {fileID: 0}
     - target: {fileID: 6288412449205794590, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_Name
       value: chicken
@@ -591,10 +595,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169918745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 3.29, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1373162052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6288412449205794590, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+  m_PrefabInstance: {fileID: 869898773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1373162056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373162052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5b4c48b568624429e08219b090b69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
+  JumpForce: 5
+  TurnSpeed: 90

@@ -5,7 +5,7 @@ using UnityEngine;
 public class JumpMove : MonoBehaviour
 {
     public float Speed = 5f;
-    public float JumpForce = 10f;
+    public float JumpForce = 5f;
     public float TurnSpeed = 90f;
 
 
