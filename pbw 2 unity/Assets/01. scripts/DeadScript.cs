@@ -5,11 +5,11 @@ using UnityEngine;
 public class DeadScript : MonoBehaviour
 {
 
-        void OnTriggerEnter(Collision drown)
+        void OnTriggerEnter(Collider drown)
         {
             if(drown.GetComponent<Collider>().tag == "Water")
             {
-                
+                Debug.Log("dead");
             }
         }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionDoor : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if(collision.GetComponent<Collider>().tag == "Door")
         {
