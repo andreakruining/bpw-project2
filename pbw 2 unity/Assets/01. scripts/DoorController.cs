@@ -11,10 +11,10 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Door"))
-        {
 
-            Debug.Log("triggered");
+        if(other.GetComponent<Collider>().tag == "Egg")
+        {
+            Debug.Log("button");
 
             if(openTrigger)
             {

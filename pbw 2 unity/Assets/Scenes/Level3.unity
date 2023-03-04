@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 1558951364}
   - component: {fileID: 1558951368}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Button
   m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -573,7 +573,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558951363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -624,7 +624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558951363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 0.1, z: -0.62}
+  m_LocalPosition: {x: 1.08, y: 0.31, z: -0.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -640,12 +640,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558951363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c499abca807395f41b57664478a580ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 351bb8825c3c34144be5cbc854dcd34d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myDoor: {fileID: 387202701}
-  openTrigger: 1
-  closeTrigger: 0
 --- !u!1 &1699072020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4261703732310332110, guid: 2058b9a26c6fe5345bb8c5ead8ce4118, type: 3}
@@ -916,9 +913,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Egg
       objectReference: {fileID: 0}
+    - target: {fileID: 5110391190949468258, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7660966222274789554, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_Constraints
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288642292537922303, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
+      propertyPath: m_TagString
+      value: Egg
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_RootOrder
@@ -926,7 +931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.97
+      value: -4.51
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_LocalPosition.y

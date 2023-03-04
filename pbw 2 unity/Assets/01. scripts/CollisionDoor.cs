@@ -6,10 +6,10 @@ public class CollisionDoor : MonoBehaviour
 {
     void OnTriggerEnter(Collider collision)
     {
-        if(collision.GetComponent<Collider>().tag == "Door")
-        {
-            Debug.Log("Button");
-        }
+        if(collision.GetComponent<Collider>().tag == "Egg")
+            {
+                Debug.Log("button");
+            }
     }
 
 }
