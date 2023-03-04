@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CallEgg : MonoBehaviour
 {
+    public float callSpeed= 3000f;
+    public Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +16,14 @@ public class CallEgg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        //Vector3 position = transform.position;
+
+        if(Input.GetKey("c"))
         {
             Debug.Log("mouse");
-            //position.x -= Speed * Time.deltaTime;
+            rb.AddForce(-callSpeed * Time.deltaTime,0,0);
+            //position.x -= callSpeed * Time.deltaTime;
         }
+        //transform.position = position;
     }
 }

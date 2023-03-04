@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private Animator myDoor = null;
+    [SerializeField] private Animator Door = null;
 
     [SerializeField] private bool openTrigger = false;
     [SerializeField] private bool closeTrigger = false;
@@ -18,14 +18,14 @@ public class DoorController : MonoBehaviour
 
             if(openTrigger)
             {
-                myDoor.Play("DoorOpening", 0, 0.0f);
-                gameObject.SetActive(false);
+                Door.Play("DoorOpening", 0, 0.4f);
+                gameObject.SetActive(true);
             }
 
             else if(closeTrigger)
             {
-                myDoor.Play("DoorClosing", 0, 0.0f);
-                gameObject.SetActive(false);
+                Door.Play("DoorClosing", 0, 0.4f);
+                gameObject.SetActive(true);
             }
         }
     }
