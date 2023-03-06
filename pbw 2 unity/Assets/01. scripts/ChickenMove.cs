@@ -25,19 +25,19 @@ public class ChickenMove : MonoBehaviour
 
         transform.position = position;
 
-        if(Input.GetKey("w"))
-        {
-            position.z += Speed * Time.deltaTime;
-        }
+        // if(Input.GetKey("w"))
+        // {
+        //     position.z += Speed * Time.deltaTime;
+        // }
 
-        transform.position = position;
+        // transform.position = position;
 
-        if(Input.GetKey("s"))
-        {
-            position.z -= Speed * Time.deltaTime;
-        }
+        // if(Input.GetKey("s"))
+        // {
+        //     position.z -= Speed * Time.deltaTime;
+        // }
 
-        transform.position = position;
+        // transform.position = position;
     }
 
 }
