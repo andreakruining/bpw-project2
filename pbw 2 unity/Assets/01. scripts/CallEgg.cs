@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CallEgg : MonoBehaviour
 {
-    public float callSpeed= 3000f;
-    public Rigidbody rb;
-    
+    public float callSpeed= 30f;
+    //public Rigidbody rb;
+    public GameObject egga;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class CallEgg : MonoBehaviour
         if(Input.GetKey("c"))
         {
             Debug.Log("mouse");
-
+            egga.transform.position = Vector3.MoveTowards(egga.transform.position, player.transform.position, callSpeed * Time.deltaTime);
             //rb.AddForce(-callSpeed * Time.deltaTime,0,0);
             //position.x -= callSpeed * Time.deltaTime;
         }

@@ -336,6 +336,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4330953670870838984, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330953670870838984, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_Constraints
       value: 98
       objectReference: {fileID: 0}
@@ -412,6 +416,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   JumpForce: 5
+--- !u!114 &556340759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556340750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb172a6095f46e42875d4757a0b6efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callSpeed: 3000
+  egga: {fileID: 1756491935}
+  player: {fileID: 556340750}
 --- !u!1001 &1020418459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,20 +772,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5109071951767396617, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
   m_PrefabInstance: {fileID: 2109381011}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1756491937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756491935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cb172a6095f46e42875d4757a0b6efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  callSpeed: 3000
-  rb: {fileID: 2109381012}
 --- !u!1001 &1918254545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -910,7 +915,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_Constraints
@@ -983,8 +988,3 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7660966222274789554, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
---- !u!54 &2109381012 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
-  m_PrefabInstance: {fileID: 2109381011}
-  m_PrefabAsset: {fileID: 0}
