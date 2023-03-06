@@ -50,4 +50,9 @@ public class JumpMove : MonoBehaviour
 
         transform.position = position;
     }
+
+    public void CallEgg()
+    {
+        
+    }
 }
