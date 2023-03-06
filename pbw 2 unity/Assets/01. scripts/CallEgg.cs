@@ -25,8 +25,8 @@ public class CallEgg : MonoBehaviour
         if(Input.GetKey("c"))
         {
             Debug.Log("mouse");
+            //Vector3.MoveTowards(transform.position, player, Qiaternion.identiy);
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, callSpeed * Time.deltaTime);
-            //egga.transform.position = Vector3.MoveTowards(egga.transform.position, goalPosition.transform.position, callSpeed * Time.deltaTime);
             //rb.AddForce(-callSpeed * Time.deltaTime,0,0);
             //position.x -= callSpeed * Time.deltaTime;
         }
