@@ -51,8 +51,15 @@ public class JumpMove : MonoBehaviour
         transform.position = position;
     }
 
-    public void CallEgg()
-    {
-        
-    }
+    // void JumpHigh()
+    // {
+        private void OnTriggerEnter(Collider springen)
+        {
+
+            if(springen.GetComponent<Collider>().tag == "Egg")
+            {
+                JumpForce += 5f;
+            }
+        }
+    // }
 }
