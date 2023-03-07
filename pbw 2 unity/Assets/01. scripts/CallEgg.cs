@@ -5,7 +5,7 @@ using UnityEngine;
 public class CallEgg : MonoBehaviour
 {
     public float callSpeed= 1.0f;
-    //public Rigidbody rb;
+    public Rigidbody rb;
     // public GameObject egga;
     public GameObject player;
 
@@ -25,10 +25,11 @@ public class CallEgg : MonoBehaviour
         if(Input.GetKey("c"))
         {
             Debug.Log("mouse");
-            //Vector3.MoveTowards(transform.position, player, Qiaternion.identiy);
+           
+            rb.velocity = Vector3.zero; 
+
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, callSpeed * Time.deltaTime);
-            //rb.AddForce(-callSpeed * Time.deltaTime,0,0);
-            //position.x -= callSpeed * Time.deltaTime;
+
         }
         //transform.position = position;
     }
