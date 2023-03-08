@@ -8,6 +8,7 @@ TagManager:
   - Button
   - Egg
   - Water
+  - Plank
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,10 @@ public class JumpMove : MonoBehaviour
 {
     public float Speed = 5f;
     public float JumpForce = 5f;
+
+    public GameObject egga;
+    //public BoxCollider boxy;
+    
     //public float TurnSpeed = 90f;
 
 
@@ -58,8 +62,11 @@ public class JumpMove : MonoBehaviour
 
             if(springen.GetComponent<Collider>().tag == "Egg")
             {
-                JumpForce += 5f;
+                Debug.Log("plat egg");
+                egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
+                JumpForce += 2f;
             }
+
         }
     // }
 }
