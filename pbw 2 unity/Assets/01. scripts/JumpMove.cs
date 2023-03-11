@@ -8,24 +8,15 @@ public class JumpMove : MonoBehaviour
     public float JumpForce = 5f;
 
     public GameObject egga;
-    //public BoxCollider boxy;
-    
-    //public float TurnSpeed = 90f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-    //      if (Input.GetKeyDown(KeyCode.D))
-    //  {
-    //      transform.rotation = Quaternion.LookRotation(Camera.main.transform.right);
-    //  }
         Move();
     }
 
@@ -36,6 +27,7 @@ public class JumpMove : MonoBehaviour
         if(Input.GetKey("a"))
         {
             position.x -= Speed * Time.deltaTime;
+            transform.Rotate(Vector3.up * Speed * Time.deltaTime);
         }
 
         transform.position = position;
@@ -43,6 +35,7 @@ public class JumpMove : MonoBehaviour
         if(Input.GetKey("d"))
         {
             position.x += Speed * Time.deltaTime;
+            transform.Rotate(-Vector3.up * Speed * Time.deltaTime);
         }
 
         transform.position = position;
@@ -55,18 +48,15 @@ public class JumpMove : MonoBehaviour
         transform.position = position;
     }
 
-    // void JumpHigh()
-    // {
-        private void OnTriggerEnter(Collider springen)
+    private void OnTriggerEnter(Collider springen)
+    {
+
+        if(springen.GetComponent<Collider>().tag == "Egg")
         {
-
-            if(springen.GetComponent<Collider>().tag == "Egg")
-            {
-                Debug.Log("plat egg");
-                egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
-                JumpForce += 2f;
-            }
-
+            Debug.Log("plat egg");
+            egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
+            JumpForce += 2f;
         }
-    // }
+
+    }
 }

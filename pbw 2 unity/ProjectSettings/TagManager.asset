@@ -9,6 +9,7 @@ TagManager:
   - Egg
   - Water
   - Plank
+  - NextLevel
   layers:
   - Default
   - TransparentFX
