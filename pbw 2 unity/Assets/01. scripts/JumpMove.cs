@@ -55,7 +55,7 @@ public class JumpMove : MonoBehaviour
         {
             Debug.Log("plat egg");
             egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
-            JumpForce += 2f;
+            JumpForce += 5f;
         }
 
     }
