@@ -54,9 +54,11 @@ public class JumpMove : MonoBehaviour
         if(springen.GetComponent<Collider>().tag == "Egg")
         {
             Debug.Log("plat egg");
-            egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
+            //egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
             JumpForce += 5f;
         }
+
+        JumpForce = 5f;
 
     }
 }

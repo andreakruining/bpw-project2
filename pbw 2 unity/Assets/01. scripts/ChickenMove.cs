@@ -56,8 +56,8 @@ public class ChickenMove : MonoBehaviour
         if(springen.GetComponent<Collider>().tag == "Egg")
         {
             Debug.Log("plat egg");
-            egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
-            JumpForce += 2f;
+            //egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
+            JumpForce += 5f;
         }
 
     }
