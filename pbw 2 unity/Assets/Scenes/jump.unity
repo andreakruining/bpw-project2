@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0064582922, g: 0.1217651, b: 0.08068859, a: 1}
+  m_IndirectSpecularColor: {r: 0.00645446, g: 0.12164281, b: 0.08062761, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,7 +254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7444481161540298304, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.59
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 7444481161540298304, guid: 12770b49685b22e4183b51c182f33f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -825,6 +825,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
+      propertyPath: m_Drag
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5109071951767396617, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_Name
       value: egg
@@ -835,7 +839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.148784
+      value: -7.42
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1050,11 +1054,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3352481687575384093, guid: a3bbd4a1db643244fa4e1d2ef7a96aed, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -427
+      value: -360.7
       objectReference: {fileID: 0}
     - target: {fileID: 3352481687575384093, guid: a3bbd4a1db643244fa4e1d2ef7a96aed, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -219.5
+      value: -211.2
       objectReference: {fileID: 0}
     - target: {fileID: 3352481688523180610, guid: a3bbd4a1db643244fa4e1d2ef7a96aed, type: 3}
       propertyPath: m_Name
