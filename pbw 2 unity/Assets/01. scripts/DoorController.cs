@@ -20,10 +20,10 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider sluiten)
-    {
-            Debug.Log("close");
+    // private void OnTriggerExit(Collider sluiten)
+    // {
+    //         Debug.Log("close");
             
-            Door.SetTrigger("OpenTrigger");
-    }
+    //         Door.SetTrigger("OpenTrigger");
+    // }
 }
