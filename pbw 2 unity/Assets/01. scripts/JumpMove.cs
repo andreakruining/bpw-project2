@@ -8,9 +8,8 @@ public class JumpMove : MonoBehaviour
     public float JumpForce = 5f;
 
     public GameObject egga;
-    private float horizontal;
-    private float vertical;
     public Rigidbody rb;
+    Vector3 movement; 
 
     void Start()
     {
@@ -25,15 +24,13 @@ public class JumpMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(transform.position + horizontal * Speed * Time.deltaTime);
-        rb.MovePosition(transform.position + vertical * Speed * Time.deltaTime);
+        rb.MovePosition = movement * speed * Time.fixedDeltaTime;
     }
 
     public void Move()
     {
         Vector3 position = transform.position;
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        movement = Input.GetAxis("Horizontal");
 
         // if(Input.GetKey("a"))
         // {
