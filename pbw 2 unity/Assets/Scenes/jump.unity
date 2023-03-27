@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   callSpeed: 1
   rb: {fileID: 359031033}
-  player: {fileID: 0}
+  player: {fileID: 1137524362}
 --- !u!1 &600623294
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +856,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4654376802001819131, guid: 5be9ebc6ebf8c7940b9bda5a85295760, type: 3}
   m_PrefabInstance: {fileID: 4654376802087003552}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1137524362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1886133101731619605, guid: f2d6d1e561621cf4897961c6cc5ad1c5, type: 3}
+  m_PrefabInstance: {fileID: 840944846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1398765235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -870,7 +875,7 @@ PrefabInstance:
     - target: {fileID: 296076930501616974, guid: bca9081ba52ffc44dbf205af55e52716, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1137524362}
     - target: {fileID: 296076930501616974, guid: bca9081ba52ffc44dbf205af55e52716, type: 3}
       propertyPath: respawnEgg
       value: 
