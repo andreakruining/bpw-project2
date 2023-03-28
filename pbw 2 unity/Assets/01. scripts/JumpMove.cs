@@ -8,8 +8,8 @@ public class JumpMove : MonoBehaviour
     public float JumpForce = 5f;
 
     public GameObject egga;
-    public Rigidbody rb;
-    float movement; 
+    // public Rigidbody rb;
+    // Vector3 movement; 
 
     void Start()
     {
@@ -22,28 +22,32 @@ public class JumpMove : MonoBehaviour
         Move();
     }
 
-    void FixedUpdate()
-    {
-        //rb.MovePosition = movement * speed * Time.fixedDeltaTime;
-        transform.Translate(movement, 0, 0);
-    }
+    // void FixedUpdate()
+    // {
+    //     //rb.MovePosition = movement * Speed * Time.fixedDeltaTime;
+    //     //rb.MovePosition(rb.position + movement * Speed * Time.fixedDeltaTime);
+    //     //transform.Translate(0, 0, movement + Speed * Time.fixedDeltaTime);
+    //     Vector3 direction = movement.normalized;
+    //     rb.MovePosition(rb.position + direction * Speed * Time.fixedDeltaTime);
+    // }
 
     public void Move()
     {
         Vector3 position = transform.position;
-        movement = Input.GetAxis("Horizontal");
+        //movement.z = Input.GetAxis("Horizontal");
 
-        // if(Input.GetKey("a"))
-        // {
-        //     position.x -= Speed * Time.deltaTime;
-        //     transform.Rotate(Vector3.up * Speed * Time.deltaTime);
-        // }
+        //dit is echt de enige die werkt. Met rigidbody krijg ik alleen maar meer bugs die niet willen oplossen
+        if(Input.GetKey("a"))
+        {
+            position.x -= Speed * Time.deltaTime;
+            transform.Rotate(Vector3.up * Speed * Time.deltaTime);
+        }
 
-        // if(Input.GetKey("d"))
-        // {
-        //     position.x += Speed * Time.deltaTime;
-        //     transform.Rotate(-Vector3.up * Speed * Time.deltaTime);
-        // }
+        if(Input.GetKey("d"))
+        {
+            position.x += Speed * Time.deltaTime;
+            transform.Rotate(-Vector3.up * Speed * Time.deltaTime);
+        }
 
         if(Input.GetKey("space"))
         {
