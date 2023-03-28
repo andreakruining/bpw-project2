@@ -9,7 +9,7 @@ public class JumpMove : MonoBehaviour
 
     public GameObject egga;
     public Rigidbody rb;
-    Vector3 movement; 
+    float movement; 
 
     void Start()
     {
@@ -24,7 +24,8 @@ public class JumpMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition = movement * speed * Time.fixedDeltaTime;
+        //rb.MovePosition = movement * speed * Time.fixedDeltaTime;
+        transform.Translate(movement, 0, 0);
     }
 
     public void Move()
