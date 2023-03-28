@@ -13,8 +13,7 @@ public class DoorController : MonoBehaviour
 
     void Start()
     {
-        bool fenceCollider = fence.GetComponent<BoxCollider>();
-        fenceCollider = true; 
+
     }
 
     private void OnTriggerEnter(Collider openen)
@@ -23,7 +22,7 @@ public class DoorController : MonoBehaviour
         {
             Debug.Log("open");
             Door.SetTrigger("OpenTrigger");
-
+            //fence.GetComponent<Collider2D>().enabled = false;
         }
     }
 
