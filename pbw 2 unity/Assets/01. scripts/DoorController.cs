@@ -6,23 +6,25 @@ public class DoorController : MonoBehaviour
 {
     [SerializeField] private Animator Door = null;
 
-    private GameObject fence;
+    public GameObject fence;
 
     // [SerializeField] private bool openTrigger = false;
     // [SerializeField] private bool closeTrigger = false;
 
     void Start()
     {
-
+     
     }
 
     private void OnTriggerEnter(Collider openen)
     {
+        Collider fenceCollider = fence.GetComponent<Collider>();
+
         if(openen.GetComponent<Collider>().tag == "Egg")
         {
             Debug.Log("open");
             Door.SetTrigger("OpenTrigger");
-            //fence.GetComponent<Collider2D>().enabled = false;
+            fenceCollider.isTrigger = true;
         }
     }
 
