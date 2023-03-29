@@ -10,16 +10,18 @@ public class ChickenMove : MonoBehaviour
 
     public GameObject egga;
     public GameObject plank;
-    //private Rigidbody plankRB;
+ 
     private Animator animator;
 
     private float delay = 2.5f;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
     void Start()
     {
-        // plankRB = plank.GetComponent<Rigidbody>();
-        // plankRB.useGravity = false;
         animator = plank.GetComponent<Animator>();
+        audioSource.clip = audioClip;
     }
 
     void Update()
@@ -55,6 +57,7 @@ public class ChickenMove : MonoBehaviour
 
         if(springen.CompareTag("Egg"))
         {
+            audioSource.Play();
             StartCoroutine(TriggeredEvent());
         }
     }
@@ -63,7 +66,7 @@ public class ChickenMove : MonoBehaviour
     {
         Debug.Log("event started");
 
-        JumpForce += 5f;
+        JumpForce = 10f;
         yield return new WaitForSeconds(delay);
 
         Debug.Log("event ended");

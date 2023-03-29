@@ -59,7 +59,7 @@ public class JumpMove : MonoBehaviour
     {
         Debug.Log("event started");
 
-        JumpForce += 5f;
+        JumpForce = 10f;
         yield return new WaitForSeconds(delay);
 
         Debug.Log("event ended");
