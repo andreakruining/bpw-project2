@@ -10,15 +10,18 @@ public class ChickenMove : MonoBehaviour
 
     public GameObject egga;
     public GameObject plank;
-    private Rigidbody plankRB;
+    //private Rigidbody plankRB;
+    private Animator animator;
+
+    private float delay = 2.5f;
 
     void Start()
     {
-        plankRB = plank.GetComponent<Rigidbody>();
-        plankRB.useGravity = false;
+        // plankRB = plank.GetComponent<Rigidbody>();
+        // plankRB.useGravity = false;
+        animator = plank.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -28,19 +31,16 @@ public class ChickenMove : MonoBehaviour
     {
         Vector3 position = transform.position;
 
+        //dit is echt de enige die werkt. Met rigidbody krijg ik alleen maar meer bugs die niet willen oplossen
         if(Input.GetKey("a"))
         {
             position.x -= Speed * Time.deltaTime;
         }
-
-        transform.position = position;
         
         if(Input.GetKey("d"))
         {
             position.x += Speed * Time.deltaTime;
         }
-
-        transform.position = position;
 
         if(Input.GetKey("space"))
         {
@@ -53,21 +53,28 @@ public class ChickenMove : MonoBehaviour
     private void OnTriggerEnter(Collider springen)
     {
 
-        if(springen.GetComponent<Collider>().tag == "Egg")
+        if(springen.CompareTag("Egg"))
         {
-            Debug.Log("plat egg");
-            //egga.gameObject.transform.localScale = new Vector3(1, 0, 1);
-            JumpForce += 5f;
+            StartCoroutine(TriggeredEvent());
         }
+    }
 
+    private IEnumerator TriggeredEvent()
+    {
+        Debug.Log("event started");
+
+        JumpForce += 5f;
+        yield return new WaitForSeconds(delay);
+
+        Debug.Log("event ended");
+        JumpForce = 5f;
     }
 
     private void OnCollisionEnter(Collision plankFall)
     {
-        if(plankFall.collider.tag == "Plank")
+        if(plankFall.gameObject.CompareTag("Plank"))
         {
-            Debug.Log("fall");
-            plankRB.useGravity = true;
+            animator.SetTrigger("fallingDown");
         }
     } 
 }
