@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CallEgg : MonoBehaviour
 {
-    public float callSpeed= 1.0f;
+    public float callSpeed= 5f;
     public Rigidbody rb;
     // public GameObject egga;
     public GameObject player;

@@ -1393,6 +1393,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3036783104472593135, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 329696991}
     - target: {fileID: 5109071951767396617, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_Name
       value: egg
@@ -1443,26 +1447,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
---- !u!54 &1853065185 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
-  m_PrefabInstance: {fileID: 1853065184}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1853065186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894485334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cb172a6095f46e42875d4757a0b6efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  callSpeed: 1
-  rb: {fileID: 1853065185}
-  player: {fileID: 329696991}
 --- !u!1001 &1856197483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1792,26 +1776,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4109054808000646787, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
-      propertyPath: m_Drag
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4109054808000646787, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4109054808000646787, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4109054808000646787, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
-      propertyPath: m_Constraints
-      value: 58
-      objectReference: {fileID: 0}
-    - target: {fileID: 4109054808000646787, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8953085416411369081, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
       propertyPath: m_Name
       value: plank
@@ -1868,5 +1832,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c8bfdd122dd55914ea6e4f2e62341807, type: 3}
