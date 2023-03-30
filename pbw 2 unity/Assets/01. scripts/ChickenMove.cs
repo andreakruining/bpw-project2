@@ -16,12 +16,10 @@ public class ChickenMove : MonoBehaviour
     private float delay = 2.5f;
 
     public AudioSource audioSource;
-    public AudioClip audioClip;
 
     void Start()
     {
         animator = plank.GetComponent<Animator>();
-        audioSource.clip = audioClip;
     }
 
     void Update()

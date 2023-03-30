@@ -11,10 +11,7 @@ public class JumpMove : MonoBehaviour
 
     private float delay = 2.5f;
 
-    void Start()
-    {
-
-    }
+    public AudioSource audioSource;
 
     void Update()
     {
@@ -51,6 +48,7 @@ public class JumpMove : MonoBehaviour
 
         if(springen.CompareTag("Egg"))
         {
+            audioSource.Play();
             StartCoroutine(TriggeredEvent());
         }
     }

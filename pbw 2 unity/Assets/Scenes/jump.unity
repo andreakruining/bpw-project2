@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1639214948}
-  m_IndirectSpecularColor: {r: 0.17606053, g: 0.101900205, b: 0.02375984, a: 1}
+  m_IndirectSpecularColor: {r: 0.17602192, g: 0.101882905, b: 0.02375407, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 160501175}
   - component: {fileID: 160501174}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: ground(4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -706,6 +706,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &805668561 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 960872015020593068, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+  m_PrefabInstance: {fileID: 960872014215580029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &840944846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -757,6 +762,10 @@ PrefabInstance:
       propertyPath: Speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 988586039, guid: f2d6d1e561621cf4897961c6cc5ad1c5, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 805668561}
     - target: {fileID: 1884482521038448155, guid: f2d6d1e561621cf4897961c6cc5ad1c5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1720,6 +1729,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1591425183711231982, guid: 1e82d3201a3a290448614e480c219eb2, type: 3}
   m_PrefabInstance: {fileID: 1591425183115273637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &960872014215580029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 960872015020593069, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_Name
+      value: soundeffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.2289085
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5733743
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.745296
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960872015020593071, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b8f01cde000756478b95a1c8f5f614b, type: 3}
 --- !u!1001 &1591425183115273637
 PrefabInstance:
   m_ObjectHideFlags: 0
