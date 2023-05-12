@@ -553,6 +553,11 @@ MonoBehaviour:
   egga: {fileID: 894485334}
   plank: {fileID: 636407690}
   audioSource: {fileID: 313816199}
+--- !u!4 &329697005 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1884482521038448155, guid: f2d6d1e561621cf4897961c6cc5ad1c5, type: 3}
+  m_PrefabInstance: {fileID: 1856197483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &551799772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -957,6 +962,7 @@ GameObject:
   - component: {fileID: 1169918748}
   - component: {fileID: 1169918747}
   - component: {fileID: 1169918746}
+  - component: {fileID: 1169918749}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1030,6 +1036,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 4.646, y: 0, z: 0}
+--- !u!114 &1169918749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169918745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f1c0838a3fdce4097cb57b0f6c000a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 329697005}
+  offset: {x: 0, y: 5, z: -10}
 --- !u!1001 &1256817873
 PrefabInstance:
   m_ObjectHideFlags: 0
