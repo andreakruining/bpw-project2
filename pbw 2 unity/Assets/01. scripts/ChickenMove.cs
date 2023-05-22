@@ -6,23 +6,23 @@ public class ChickenMove : MonoBehaviour
 {
  
     public float Speed = 5f;
-    public float JumpForce = 5f;
+    public float JumpForce = 3f;
 
     public Rigidbody rb_P;
 
     public GameObject egga;
     public GameObject plank;
  
-    private Animator animator;
+    //private Animator animator;
 
-    private float delay = 2.5f;
+    //private float delay = 1f;
 
-    public AudioSource audioSource;
+    //public AudioSource audioSource;
 
-    void Start()
-    {
-        animator = plank.GetComponent<Animator>();
-    }
+    //void Start()
+    //{
+    //    animator = plank.GetComponent<Animator>();
+    //}
 
     void Update()
     {
@@ -53,32 +53,32 @@ public class ChickenMove : MonoBehaviour
         transform.position = position;
     }
 
-    private void OnTriggerEnter(Collider springen)
-    {
+    //private void OnTriggerEnter(Collider springen)
+    //{
 
-        if(springen.CompareTag("Egg"))
-        {
-            audioSource.Play();
-            StartCoroutine(TriggeredEvent());
-        }
-    }
+    //    if(springen.CompareTag("Egg"))
+    //    {
+    //        audioSource.Play();
+    //        StartCoroutine(TriggeredEvent());
+    //    }
+    //}
 
-    private IEnumerator TriggeredEvent()
-    {
-        Debug.Log("event started");
+    //private IEnumerator TriggeredEvent()
+    //{
+    //    Debug.Log("event started");
 
-        JumpForce = 10f;
-        yield return new WaitForSeconds(delay);
+    //    JumpForce = 10f;
+    //    yield return new WaitForSeconds(delay);
 
-        Debug.Log("event ended");
-        JumpForce = 5f;
-    }
+    //    Debug.Log("event ended");
+    //    JumpForce = 5f;
+    //}
 
-    private void OnCollisionEnter(Collision plankFall)
-    {
-        if(plankFall.gameObject.CompareTag("Plank"))
-        {
-            animator.SetTrigger("fallingDown");
-        }
-    } 
+    //private void OnCollisionEnter(Collision plankFall)
+    //{
+    //    if(plankFall.gameObject.CompareTag("Plank"))
+    //    {
+    //        animator.SetTrigger("fallingDown");
+    //    }
+    //} 
 }

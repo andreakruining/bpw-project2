@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformFall : MonoBehaviour
 {
-    public GameObject platform;
+    public GameObject log;
     float x = 6;
     float y = 1;
     float z = 2;
@@ -13,9 +13,9 @@ public class PlatformFall : MonoBehaviour
     public void OnTriggerEnter(Collider crossing)
     {
 
-        if (crossing.CompareTag("Platform"))
+        if (crossing.CompareTag("Egg"))
         {
-            platform.transform.position = new Vector3(x, y, z);
+            log.transform.position = new Vector3(x, y, z);
         }
     }
 }

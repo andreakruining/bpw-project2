@@ -8,6 +8,14 @@ public class CallEgg : MonoBehaviour
     public Rigidbody rb;
     public Transform player;
 
+    public GameObject plank;
+
+    private Animator animator;
+
+    void Start()
+    {
+        animator = plank.GetComponent<Animator>();
+    }
     void Update()
     {
         if(Input.GetKey("c"))
@@ -24,6 +32,14 @@ public class CallEgg : MonoBehaviour
             rb.velocity = transform.right * 10;
             
             //transform.position = Vector3.MoveTowards(transform.position, -player.transform.position, callSpeed * Time.deltaTime);
+        }
+    }
+
+    private void OnCollisionEnter(Collision plankFall)
+    {
+        if (plankFall.gameObject.CompareTag("Plank"))
+        {
+            animator.SetTrigger("fallingDown");
         }
     }
 }
