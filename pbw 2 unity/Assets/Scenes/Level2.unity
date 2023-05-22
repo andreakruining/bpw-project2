@@ -1465,6 +1465,10 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
+      propertyPath: m_Constraints
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 958438008104184865, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
@@ -1479,7 +1483,7 @@ PrefabInstance:
     - target: {fileID: 3036783104472593135, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 329696991}
+      objectReference: {fileID: 329697005}
     - target: {fileID: 5109071951767396617, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_Name
       value: egg
@@ -1490,7 +1494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.83
+      value: -0.43
       objectReference: {fileID: 0}
     - target: {fileID: 8713179146937740731, guid: 86137d0f79233754698483b0b88b4d31, type: 3}
       propertyPath: m_LocalPosition.y
