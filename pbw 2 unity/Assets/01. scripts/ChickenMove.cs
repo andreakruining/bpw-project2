@@ -8,6 +8,8 @@ public class ChickenMove : MonoBehaviour
     public float Speed = 5f;
     public float JumpForce = 5f;
 
+    public Rigidbody rb_P;
+
     public GameObject egga;
     public GameObject plank;
  
@@ -44,7 +46,8 @@ public class ChickenMove : MonoBehaviour
 
         if(Input.GetKey("space"))
         {
-            position.y += JumpForce * Time.deltaTime;
+            rb_P.velocity = transform.up * JumpForce;
+            //position.y += JumpForce * Time.deltaTime;
         }
 
         transform.position = position;

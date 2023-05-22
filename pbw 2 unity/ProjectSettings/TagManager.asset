@@ -11,6 +11,8 @@ TagManager:
   - Plank
   - NextLevel
   - chicken
+  - Platform
+  - Log
   layers:
   - Default
   - TransparentFX

@@ -9,9 +9,9 @@ public class JumpMove : MonoBehaviour
 
     public GameObject egga;
 
-    private float delay = 2.5f;
+    //private float delay = 2.5f;
 
-    public AudioSource audioSource;
+    //public AudioSource audioSource;
 
     void Update()
     {
@@ -43,24 +43,24 @@ public class JumpMove : MonoBehaviour
         transform.position = position;
     }
 
-    private void OnTriggerEnter(Collider springen)
-    {
+    //private void OnTriggerEnter(Collider springen)
+    //{
 
-        if(springen.CompareTag("Egg"))
-        {
-            audioSource.Play();
-            StartCoroutine(TriggeredEvent());
-        }
-    }
+    //    if(springen.CompareTag("Egg"))
+    //    {
+    //        audioSource.Play();
+    //        StartCoroutine(TriggeredEvent());
+    //    }
+    //}
 
-    private IEnumerator TriggeredEvent()
-    {
-        Debug.Log("event started");
+    //private IEnumerator TriggeredEvent()
+    //{
+    //    Debug.Log("event started");
 
-        JumpForce = 10f;
-        yield return new WaitForSeconds(delay);
+    //    JumpForce = 10f;
+    //    yield return new WaitForSeconds(delay);
 
-        Debug.Log("event ended");
-        JumpForce = 5f;
-    }
+    //    Debug.Log("event ended");
+    //    JumpForce = 5f;
+    //}
 }

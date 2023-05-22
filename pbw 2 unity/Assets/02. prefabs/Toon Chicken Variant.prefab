@@ -193,7 +193,7 @@ BoxCollider:
   m_GameObject: {fileID: 1886133101731619605}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.18342154, y: 0.016697688, z: 0.1495238}
   m_Center: {x: 0.0026807156, y: -0.023336206, z: 0.002556015}
@@ -212,3 +212,4 @@ MonoBehaviour:
   Speed: 5
   JumpForce: 5
   egga: {fileID: 0}
+  audioSource: {fileID: 0}
