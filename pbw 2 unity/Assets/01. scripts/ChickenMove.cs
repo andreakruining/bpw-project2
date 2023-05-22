@@ -5,13 +5,13 @@ using UnityEngine;
 public class ChickenMove : MonoBehaviour
 {
  
-    public float Speed = 5f;
-    public float JumpForce = 3f;
+    private float Speed = 5f;
+    private float JumpForce = 2f;
 
     public Rigidbody rb_P;
 
     public GameObject egga;
-    public GameObject plank;
+    //public GameObject plank;
  
     //private Animator animator;
 
@@ -44,7 +44,7 @@ public class ChickenMove : MonoBehaviour
             position.x += Speed * Time.deltaTime;
         }
 
-        if(Input.GetKey("space"))
+        if (Input.GetKeyDown("space"))
         {
             rb_P.velocity = transform.up * JumpForce;
             //position.y += JumpForce * Time.deltaTime;
@@ -81,4 +81,17 @@ public class ChickenMove : MonoBehaviour
     //        animator.SetTrigger("fallingDown");
     //    }
     //} 
+
+    //private IEnumerator Other()
+    //{
+    //    if (Input.GetKey("space"))
+    //    {
+    //        rb_P.velocity = transform.up * JumpForce;
+
+    //        yield return new WaitForSeconds(5);
+
+    //        rb_P.velocity = transform.up * 0;
+    //        //position.y += JumpForce * Time.deltaTime;
+    //    }
+    //}
 }

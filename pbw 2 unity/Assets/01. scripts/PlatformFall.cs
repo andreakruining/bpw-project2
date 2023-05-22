@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlatformFall : MonoBehaviour
 {
     public GameObject log;
-    float x = 6;
-    float y = 1;
-    float z = 2;
+    public Transform targetPos;
+
+    public float speed = 2f;
 
 
     public void OnTriggerEnter(Collider crossing)
@@ -15,7 +15,7 @@ public class PlatformFall : MonoBehaviour
 
         if (crossing.CompareTag("Egg"))
         {
-            log.transform.position = new Vector3(x, y, z);
+            log.transform.position = Vector3.Lerp(transform.position, targetPos.transform.position, speed * Time.deltaTime);
         }
     }
 }

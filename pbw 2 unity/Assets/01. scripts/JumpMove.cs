@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class JumpMove : MonoBehaviour
 {
-    public float Speed = 5f;
-    public float JumpForce = 5f;
+    private float Speed = 5f;
+    private float JumpForce = 1.5f;
 
     public GameObject egga;
+    public Rigidbody rb_P;
 
     //private float delay = 2.5f;
 
@@ -37,7 +38,7 @@ public class JumpMove : MonoBehaviour
 
         if(Input.GetKey("space"))
         {
-            position.y += JumpForce * Time.deltaTime;
+            rb_P.velocity = transform.up * JumpForce;
         }
 
         transform.position = position;
