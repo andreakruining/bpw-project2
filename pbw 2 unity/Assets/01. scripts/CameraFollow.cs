@@ -4,34 +4,48 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField]
-    GameObject player;
+    //[SerializeField]
+    //public GameObject player;
 
-    [SerializeField]
-    float timeOffset;
+    //[SerializeField]
+    //float timeOffset;
 
-    [SerializeField]
-    Vector3 posOffset;
+    //[SerializeField]
+    //Vector3 posOffset;
 
-    private Vector3 veloc;
+    //[SerializeField]
+    //float leftLimit;
+    //[SerializeField]
+    //float rightLimit;
+    //[SerializeField]
+    //float bottomLimit;
+    //[SerializeField]
+    //float topLimit;
 
-    private void Update()
-    {
-        //cameras current position
-        Vector3 startPos = transform.position;
-        //players current position
-        Vector3 endPos = player.transform.position;
+    //private Vector3 veloc;
 
-        endPos.x += posOffset.x;
-        endPos.y += posOffset.y;
-        endPos.z = -10;
+    //private void Update()
+    //{
+    //    //cameras current position
+    //    Vector3 startPos = transform.position;
+    //    //players current position
+    //    Vector3 endPos = player.transform.position;
 
-        //smoothly move camera towards player pos
-        transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
+    //    endPos.x += posOffset.x;
+    //    endPos.y += posOffset.y;
+    //    endPos.z = -10;
 
-    }
-    //public Transform player;
-    //public Vector3 offset;
+    //    //smoothly move camera towards player pos
+    //    transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
+
+    //    transform.position = new Vector3(
+    //        Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
+    //        Mathf.Clamp(transform.position.y, bottomLimit, topLimit),
+    //        transform.position.z);
+    //}
+    public Transform player;
+    public Vector3 offset;
+
     //// Update is called once per frame
 
     //private void Start()
@@ -43,9 +57,9 @@ public class CameraFollow : MonoBehaviour
 
     //    transform.position = offset;
     //}
-    //void Update()
-    //{
-    //    transform.position = player.position + offset;
+    void Update()
+    {
+        transform.position = player.position + offset;
 
-    //}
+    }
 }
