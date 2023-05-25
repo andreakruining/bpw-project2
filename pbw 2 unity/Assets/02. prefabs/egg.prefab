@@ -49,7 +49,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 56
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!136 &8256208579637504342
 CapsuleCollider:
@@ -80,6 +80,7 @@ MonoBehaviour:
   callSpeed: 5
   rb: {fileID: 958438008104184865}
   player: {fileID: 0}
+  plank: {fileID: 0}
 --- !u!1 &8288642292537922303
 GameObject:
   m_ObjectHideFlags: 0
