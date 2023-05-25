@@ -15,6 +15,7 @@ public class CallEgg : MonoBehaviour
     void Start()
     {
         animator = plank.GetComponent<Animator>();
+
     }
     void Update()
     {

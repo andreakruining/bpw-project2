@@ -8,12 +8,13 @@ public class DoorController : MonoBehaviour
 
     public GameObject fence;
 
+
     // [SerializeField] private bool openTrigger = false;
     // [SerializeField] private bool closeTrigger = false;
 
     void Start()
     {
-     
+
     }
 
     private void OnTriggerEnter(Collider openen)
