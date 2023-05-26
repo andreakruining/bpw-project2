@@ -16,16 +16,17 @@ public class CallEgg : MonoBehaviour
     {
         if(Input.GetKey("c"))
         {
-            Vector3 actualTarget = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
-            //rb.velocity = Vector3.zero; 
+            rb.velocity = new Vector3(-5, 0, 0);
+            //Vector3 actualTarget = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
+            ////rb.velocity = Vector3.zero; 
 
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, callSpeed * Time.deltaTime);
+            //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, callSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey("v"))
         {
             //Vector3 actualTarget = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
-            rb.velocity = transform.right * 10;
+            rb.velocity = transform.right * 5;
             
             //transform.position = Vector3.MoveTowards(transform.position, -player.transform.position, callSpeed * Time.deltaTime);
         }

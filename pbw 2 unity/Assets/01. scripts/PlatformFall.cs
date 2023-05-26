@@ -7,7 +7,7 @@ public class PlatformFall : MonoBehaviour
     public GameObject log;
     public Transform targetPos;
 
-    public float speed = 2f;
+    //public float speed = 2f;
 
     private void Start()
     {

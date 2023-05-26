@@ -9,7 +9,7 @@ public class NextLevelScript : MonoBehaviour
     {
         if(levelUpgrade.GetComponent<Collider>().tag == "Player")
         {
-            Debug.Log("nextlevel bitch");
+            Debug.Log("nextlevel");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
