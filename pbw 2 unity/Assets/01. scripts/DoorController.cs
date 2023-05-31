@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private Animator Door = null;
+    [SerializeField] private Animator Door;
 
     public GameObject fence;
 
@@ -21,7 +21,7 @@ public class DoorController : MonoBehaviour
     {
         Collider fenceCollider = fence.GetComponent<Collider>();
 
-        if(openen.GetComponent<Collider>().tag == "Egg")
+        if(openen.GetComponent<Collider>().tag == "EndTrigger")
         {
             Debug.Log("open");
             Door.SetTrigger("OpenTrigger");

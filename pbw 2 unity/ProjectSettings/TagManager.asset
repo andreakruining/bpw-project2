@@ -15,6 +15,7 @@ TagManager:
   - Log
   - Trigger
   - TriggerPlank
+  - EndTrigger
   layers:
   - Default
   - TransparentFX
