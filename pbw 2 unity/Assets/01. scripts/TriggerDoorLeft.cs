@@ -8,7 +8,10 @@ public class TriggerDoorLeft : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!other.CompareTag("Player")) return;
-        door.transform.position += new Vector3(1, 0, 0);
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("chick in place");
+            door.transform.position += new Vector3(1, 0, 0);
+        }
     }
 }

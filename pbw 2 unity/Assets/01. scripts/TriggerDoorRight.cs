@@ -8,7 +8,10 @@ public class TriggerDoorRight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Egg")) return;
-        triggerBlock.transform.position += new Vector3(1, 0, 0);
+        if (other.CompareTag("Egg"))
+        {
+            Debug.Log("egg in place");
+            triggerBlock.transform.position += new Vector3(1, 0, 0);
+        }
     }
 }
