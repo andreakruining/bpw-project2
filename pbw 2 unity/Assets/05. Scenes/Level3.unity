@@ -675,6 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c499abca807395f41b57664478a580ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Door: {fileID: 1144729744496744627}
   fence: {fileID: 1144729744496744621}
 --- !u!111 &483968028
 Animation:
@@ -683,7 +684,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483968025}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -2880,3 +2881,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8334327, y: 1, z: 1.0741216}
   m_Center: {x: -0.91671443, y: -0.0000020284328, z: 0.7566022}
+--- !u!95 &1144729744496744627 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 3bd29fe4ed3569940ac7518a56a0adfe, type: 3}
+  m_PrefabInstance: {fileID: 1144729744496744620}
+  m_PrefabAsset: {fileID: 0}

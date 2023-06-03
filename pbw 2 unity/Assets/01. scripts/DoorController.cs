@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    private Animator Door;
+    public Animator Door;
 
     public GameObject fence;
 
