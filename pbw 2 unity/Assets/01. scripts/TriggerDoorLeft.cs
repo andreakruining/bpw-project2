@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TriggerDoorLeft : MonoBehaviour
 {
-    [SerializeField] GameObject door;
+    [SerializeField] GameObject doorBlock;
 
     bool isOpened = false;
+
+    int x = 1;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,7 +16,7 @@ public class TriggerDoorLeft : MonoBehaviour
         {
             Debug.Log("chick in place");
             isOpened = true;
-            door.transform.position += new Vector3(1, 0, 0);
+            doorBlock.transform.position += new Vector3(x, 0, 0);
         }
     }
 }

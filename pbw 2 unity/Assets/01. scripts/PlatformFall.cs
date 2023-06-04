@@ -20,8 +20,8 @@ public class PlatformFall : MonoBehaviour
 
         if (crossing.CompareTag("Egg"))
         {
-            targetPos = log.transform;
-            targetPos.transform.position = new Vector3(5.98f, 0.92f, 1.38f);
+            //targetPos = log.transform;
+            log.transform.position = targetPos.position; //new Vector3(5.98f, 0.92f, 1.38f);
                 
             //Vector3.MoveTowards(transform.position, targetPos.transform.position, speed * Time.deltaTime);
         }

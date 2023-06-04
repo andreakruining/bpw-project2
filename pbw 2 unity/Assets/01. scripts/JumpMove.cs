@@ -7,7 +7,7 @@ public class JumpMove : MonoBehaviour
     private float Speed = 5f;
     private float JumpForce = 1.5f;
 
-    public GameObject egga;
+    //public GameObject egga;
     public Rigidbody rb_P;
 
     //private float delay = 2.5f;

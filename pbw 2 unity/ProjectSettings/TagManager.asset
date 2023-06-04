@@ -16,6 +16,7 @@ TagManager:
   - Trigger
   - TriggerPlank
   - EndTrigger
+  - TriggerBlock
   layers:
   - Default
   - TransparentFX

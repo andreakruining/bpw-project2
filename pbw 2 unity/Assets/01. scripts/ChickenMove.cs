@@ -10,7 +10,7 @@ public class ChickenMove : MonoBehaviour
 
     public Rigidbody rb_P;
 
-    public GameObject egga;
+    //public GameObject egga;
     //public GameObject plank;
  
     //private Animator animator;
