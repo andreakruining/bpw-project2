@@ -12,6 +12,7 @@ public class CallEgg : MonoBehaviour
     {
 
     }
+
     void Update()
     {
         if(Input.GetKey("c"))

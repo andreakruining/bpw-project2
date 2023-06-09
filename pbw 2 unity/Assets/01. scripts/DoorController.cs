@@ -8,10 +8,6 @@ public class DoorController : MonoBehaviour
 
     public GameObject fence;
 
-
-    // [SerializeField] private bool openTrigger = false;
-    // [SerializeField] private bool closeTrigger = false;
-
     void Start()
     {
         Door = fence.GetComponent<Animator>();
@@ -26,33 +22,12 @@ public class DoorController : MonoBehaviour
     {
         
 
-        if (transform.position == new Vector3(3f, 1.5f, 2f))   //openen.GetComponent<Collider>().tag == "EndTrigger" )
+        if (transform.position == new Vector3(3f, -3.81f, 2f))
         {
             Collider fenceCollider = fence.GetComponent<Collider>();
             Debug.Log("open");
-            //Door.SetBool("TriggerBool", true);
             Door.SetTrigger("OpenTrigger");
             fenceCollider.isTrigger = true;
         }
     }
-
-    //private void OnTriggerEnter(Collider openen)
-    //{
-    //    Collider fenceCollider = fence.GetComponent<Collider>();
-
-    //    if (transform.position == new Vector3(3f, 1.5f, 2f))   //openen.GetComponent<Collider>().tag == "EndTrigger" )
-    //    {
-    //        Debug.Log("open");
-    //        //Door.SetBool("TriggerBool", true);
-    //        Door.SetTrigger("OpenTrigger");
-    //        fenceCollider.isTrigger = true;
-    //    }
-    //}
-
-    // private void OnTriggerExit(Collider sluiten)
-    // {
-    //         Debug.Log("close");
-            
-    //         Door.SetTrigger("OpenTrigger");
-    // }
 }

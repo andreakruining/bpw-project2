@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlankFall3 : MonoBehaviour
 {
+    //play animation for plank in third level on collision with the egg
     private Animator animator;
-    // Start is called before the first frame update
+    
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
