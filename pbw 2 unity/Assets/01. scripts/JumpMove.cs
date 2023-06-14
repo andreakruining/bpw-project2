@@ -18,13 +18,13 @@ public class JumpMove : MonoBehaviour
         Vector3 position = transform.position;
 
         //dit is echt de enige die werkt. Met rigidbody krijg ik alleen maar meer bugs die niet willen oplossen
-        if(Input.GetKey("a"))
+        if (Input.GetKey("a"))
         {
             position.x -= Speed * Time.deltaTime;
             transform.Rotate(Vector3.up * Speed * Time.deltaTime);
         }
 
-        if(Input.GetKey("d"))
+        if (Input.GetKey("d"))
         {
             position.x += Speed * Time.deltaTime;
             transform.Rotate(-Vector3.up * Speed * Time.deltaTime);
